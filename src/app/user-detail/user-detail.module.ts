@@ -10,6 +10,7 @@ import {
 import { UserDetailComponent } from './user-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [FollowersPipe, UserDetailComponent, FollowingPipe, EmailPipe],
@@ -18,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
     UserDetailRoutingModule,
     HttpClientModule,
     MatCardModule,
+    MatButtonModule,
   ],
 })
 export class UserDetailModule {}

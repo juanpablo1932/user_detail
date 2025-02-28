@@ -9,7 +9,7 @@ const routes: Routes = [
     component: UserDetailComponent,
   },
   {
-    path: 'detail/followers',
+    path: 'followers',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
@@ -17,16 +17,6 @@ const routes: Routes = [
         exposedModule: './Module',
       }).then((m) => m.FollowersListModule),
   },
-  // {
-  //   path: 'test',
-  //   loadChildren: () =>
-  //     loadRemoteModule({
-  //       type: 'script',
-  //       remoteName: 'remote',
-  //       remoteEntry: 'http://localhost:3000/_next/static/chunks/remoteEntry.js',
-  //       exposedModule: './nextjs-remote-component',
-  //     }).then((m) => m.NextjsRemoteComponent),
-  // },
 ];
 
 @NgModule({
